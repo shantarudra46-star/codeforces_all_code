@@ -11,9 +11,9 @@ int main () {
         for (int i=0;i<n;i++) {
             cin >> s[i];
         }
-        for (int i=0;i<n-1;i++) {
+        for (int i=1;i<n-1;i++) {
 
-            if(i>=1 && (s[i]>s[i-1]) && (s[i]>s[i+1])) {
+            if(f==1 && (s[i]>s[i-1]) && (s[i]>s[i+1])) {
 
                 cout << "YES" << endl <<  i-1 << " " << i << " " << i+1 << endl;
                 f=0;
